@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  width: max-content;
+}
+
+#logoImage {
+  width: 100px;
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 18px;
+}
+
+.email-container, .exe-container, .pdf-container {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: none; /* Initially hide all containers */
+}
+
+.email-sender {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email-subject {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.email-body {
+  margin-bottom: 10px;
+}
+
+#extract-btn, #exe-btn, #pdf-btn{
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 18px;
+}
+
+#start-verification-btn {
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 18px;
+}
+
+#extract-btn:hover, #exe-btn:hover, #pdf-btn:hover {
+  background-color: #f0f0f0;
+}
+
+#extract-btn:active, #exe-btn:active, #pdf-btn:active,
+#extract-btn:focus, #exe-btn:focus, #pdf-btn:focus{
+  background-color: #007bff;
+  color: white;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-top: 10px;
+}
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+details {
+  user-select: none;
+}
+  
+details>summary span.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+  
+details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+  
+summary {
+  cursor: pointer;
+}
+  
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.showmore {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.showmore:hover {
+  background-color: #ddd;
+  border-color: #999;
+  color: #000;
+}
+
+.danger_text {
+  color: red;
+  font-weight: bold;
+}
+  
+.safe_text {
+  color: green;
+  font-weight: bold;
+}
+
+/* Active class to display the corresponding container */
+.active {
+  display: block;
+}
+
+/* New styles for the buttons in the button1-container */
+.button1-container button {
+  background: white;
+  color: black;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button1-container button:active {
+  background: #6a11cb;
+  color: white;
+  border-color: #6a11cb;
+}

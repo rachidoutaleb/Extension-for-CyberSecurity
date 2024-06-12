@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract data</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+
+    <img src="./logo/logo_128.png" id="logoImage" />
+
+    <div class="button1-container">
+        <button id="extract-btn" data-target="email-container">Suspicious Mail</button>
+        <button id="exe-btn" data-target="exe-container">Malicious EXE</button>
+        <button id="pdf-btn" data-target="pdf-container">Malicious PDF</button>
+    </div>
+
+    <div class="email-container email-container">
+        <button id="start-verification-btn" style="display:none;">Start Verification</button>
+        <div>From :
+            <span class="email-sender">-</span>
+        </div>
+        <div>Subject :
+            <span class="email-subject">-</span>
+        </div>
+
+        <details>
+            <summary>
+                <span class="showmore">Show Mail content</span>
+            </summary>
+            <div class="email-body">
+                <p>Nothing here yet..</p>
+            </div>
+        </details>
+
+        <div class="server-result any-container" style="display:none;">
+            <div>
+                <h2>Phishing :</h2>
+                <span id="1" class="p">unknown</span>
+            </div>
+            <div>
+                <h2>Spam :</h2>
+                <span id="2" class="s">unknown</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="exe-container any-container">
+        <div>
+            <h2>Malware (EXE) :</h2>
+            <div>
+                <input name="my-file-upload" type="file" id="fileUpload" accept=".exe"/>
+            </div>
+            <div>
+                <button id="uploadBtnExe">Upload EXE</button>
+            </div>
+            <div class="loader" id="loaderExe" style="display:none;"></div>
+            <div id="resultExe"></div>
+        </div>
+    </div>
+
+    <div class="pdf-container any-container">
+        <div>
+            <h2>Malware (PDF) :</h2>
+            <div>
+                <input name="my-file-upload" type="file" id="fileUploadPDF" accept=".pdf"/>
+            </div>
+            <div>
+                <button id="uploadBtnPDF">Upload PDF</button>
+            </div>
+            <div class="loader" id="loaderPDF" style="display:none;"></div>
+            <div id="resultPDF"></div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
