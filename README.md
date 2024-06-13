@@ -2,7 +2,7 @@
 I've developed 3 cybersecurity extensions:
 - **All Safe:** This extension defends against phishing emails, spam, and malicious executable files and PDFs.
 - **Guide Hardening:** It provides practical recommendations to enhance the security of your computer system.
-- **Scan to Exploit:** This tool analyzes security scan results (nmap ,Nikto, sqlmap ...), identifies vulnerabilities (CVEs), provides direct links to well-known websites like Exploit-DB, and suggests secure exploitation methods.
+- **Scan to Exploit:** This tool analyzes security scan results (nmap, Nikto, sqlmap...), identifies vulnerabilities (CVEs), provides direct links to well-known websites like Exploit-DB for each CVE, and suggests secure exploitation methods.
 
 ## How I Made These Extensions:
 - **All Safe:** Utilizes four models, each dedicated to a specific functionality (detecting spam, phishing, malicious executables, and malicious PDFs).
